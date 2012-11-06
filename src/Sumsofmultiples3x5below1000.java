@@ -19,16 +19,13 @@ public class Sumsofmultiples3x5below1000 {
 		
 		final int MAX = 1000;
 		int sum = 0;
-		for (int i = 1; i <= MAX; i++)
+		for (int i = 1; i < MAX; i++)
 		{
-			if (i%3 == 0 && i%5 == 0)
+			if (i%3 == 0 || i%5 == 0)
 				sum += i;
-			else	if (i%3 == 0)
-				sum += i;
-			else if (i%5 == 0)
-				sum += i;
-		
 		}
 		System.out.println(sum);
 	}
 }
+
+// look for 233,168
